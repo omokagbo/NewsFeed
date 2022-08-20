@@ -10,8 +10,21 @@ import Foundation
 
 class AppDIContainer {
     
+    static func makeNetworkService() -> INetworkService {
+        return RemoteNetworkService()
+    }
+    
+    static func makeNewsListRepository() -> INewsListRepository {
+        return NewsListRepository(remoteDataSource: makeNetworkService())
+    }
+    
+    static func makeNewsListViewModel() -> INewsListViewModel {
+        return NewsListViewModel(newsListRepo: makeNewsListRepository())
+    }
+    
     static func makeNewsListController() -> NewsListController {
         let vc = NewsListController()
+        vc.newsListViewModel = makeNewsListViewModel()
         return vc
     }
     
