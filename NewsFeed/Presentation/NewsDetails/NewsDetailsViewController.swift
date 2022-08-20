@@ -9,6 +9,8 @@
 import UIKit
 
 class NewsDetailsViewController: BaseViewController {
+    
+    var news: News?
 
     override func viewDidLoad() {
         super.viewDidLoad()

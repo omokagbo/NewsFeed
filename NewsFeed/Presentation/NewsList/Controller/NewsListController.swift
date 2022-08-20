@@ -11,6 +11,7 @@ import UIKit
 class NewsListController: BaseViewController {
     
     var newsListViewModel: INewsListViewModel?
+    weak var newsListCoordinator: NewsListCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

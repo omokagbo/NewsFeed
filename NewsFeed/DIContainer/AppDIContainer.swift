@@ -6,7 +6,7 @@
 //  Copyright © 2022 Emmanuel Omokagbo. All rights reserved.
 	
 
-import Foundation
+import UIKit
 
 class AppDIContainer {
     
@@ -28,4 +28,12 @@ class AppDIContainer {
         return vc
     }
     
+    static func makeNewsDetailsController() -> NewsDetailsViewController {
+        let vc = NewsDetailsViewController()
+        return vc
+    }
+    
+    static func makeNewsListCoordinator(navigationController: UINavigationController) -> NewsListCoordinator {
+        return NewsListCoordinator(navigationController: navigationController)
+    }
 }
