@@ -16,6 +16,7 @@
 		14AEAD9628B0F9FD00B21A71 /* NewsFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEAD9528B0F9FD00B21A71 /* NewsFeedUITests.swift */; };
 		14AEAD9828B0F9FD00B21A71 /* NewsFeedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEAD9728B0F9FD00B21A71 /* NewsFeedUITestsLaunchTests.swift */; };
 		14AEADAC28B1011600B21A71 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEADAB28B1011600B21A71 /* AppDIContainer.swift */; };
+		14AEADAE28B101DF00B21A71 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEADAD28B101DF00B21A71 /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		14AEAD9528B0F9FD00B21A71 /* NewsFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedUITests.swift; sourceTree = "<group>"; };
 		14AEAD9728B0F9FD00B21A71 /* NewsFeedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		14AEADAB28B1011600B21A71 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		14AEADAD28B101DF00B21A71 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 				14AEADA428B0FAFC00B21A71 /* App */,
 				14AEADAA28B1010100B21A71 /* DIContainer */,
 				14AEADA928B0FDC200B21A71 /* Base */,
-				14AEADA728B0FC2B00B21A71 /* Features */,
+				14AEADA728B0FC2B00B21A71 /* Presentation */,
 				14AEADA528B0FB0A00B21A71 /* Launch Screen */,
 				14AEADA628B0FB2100B21A71 /* Resources */,
 			);
@@ -131,6 +133,7 @@
 			children = (
 				14AEAD7428B0F9F900B21A71 /* AppDelegate.swift */,
 				14AEAD7628B0F9F900B21A71 /* SceneDelegate.swift */,
+				14AEADAD28B101DF00B21A71 /* AppConfiguration.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -152,12 +155,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		14AEADA728B0FC2B00B21A71 /* Features */ = {
+		14AEADA728B0FC2B00B21A71 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				14AEADA828B0FC3300B21A71 /* NewsList */,
 			);
-			path = Features;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		14AEADA828B0FC3300B21A71 /* NewsList */ = {
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AEADAC28B1011600B21A71 /* AppDIContainer.swift in Sources */,
+				14AEADAE28B101DF00B21A71 /* AppConfiguration.swift in Sources */,
 				14AEAD7928B0F9F900B21A71 /* NewsListController.swift in Sources */,
 				14AEAD7528B0F9F900B21A71 /* AppDelegate.swift in Sources */,
 				14AEAD7728B0F9F900B21A71 /* SceneDelegate.swift in Sources */,
@@ -481,8 +485,10 @@
 		14AEAD9C28B0F9FD00B21A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 2d021085c2e64c23927ff485d9f4299b;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://newsapi.org/v2/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
@@ -509,8 +515,10 @@
 		14AEAD9D28B0F9FD00B21A71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = 2d021085c2e64c23927ff485d9f4299b;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://newsapi.org/v2/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
