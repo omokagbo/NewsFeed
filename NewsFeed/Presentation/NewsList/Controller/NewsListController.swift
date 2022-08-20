@@ -60,6 +60,7 @@ class NewsListController: BaseViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navBarNewsLabel)
         view.addSubviews(topNewsLabel, newsCollectionView)
         constrainViews()
+        showLoading()
     }
     
     fileprivate func constrainViews() {
@@ -67,16 +68,44 @@ class NewsListController: BaseViewController {
         newsCollectionView.anchor(top: topNewsLabel.safeAreaLayoutGuide.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, margin: .init(top: 10, left: 0, bottom: 0, right: 0))
     }
     
+    override func setChildViewControllerObservers() {
+        super.setChildViewControllerObservers()
+        showError()
+        updateCollectionView()
+    }
+    
+    fileprivate func showError() {
+        newsListViewModel?.showError = { [weak self] error in
+            guard let self = self else { return }
+            self.hideLoading()
+            Logger.printIfDebug(data: error.localizedDescription, logType: .error)
+        }
+    }
+    
+    fileprivate func updateCollectionView() {
+        newsListViewModel?.showNewsFeed = { [weak self] in
+            guard let self = self else { return }
+            self.hideLoading()
+            DispatchQueue.main.async {
+                self.newsCollectionView.reloadData()
+            }
+        }
+    }
+    
 }
 
 extension NewsListController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        newsListViewModel?.newsFeed.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsListCollectionViewCell.reuseIdentifier, for: indexPath) as? NewsListCollectionViewCell else {
             return UICollectionViewCell()
+        }
+        
+        if let newsFeed = newsListViewModel?.newsFeed {
+            cell.setup(with: newsFeed[indexPath.row])
         }
         
         return cell

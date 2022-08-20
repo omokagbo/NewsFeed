@@ -26,6 +26,7 @@ class RemoteNetworkService: INetworkService {
         request.httpMethod = method.rawValue
         
         if let parameters = parameters {
+            Logger.printIfDebug(data: "Parameter: \(parameters)", logType: .success)
             switch method {
             case .get:
                 var urlComponent = URLComponents(string: urlString)

@@ -9,10 +9,17 @@
 import Foundation
 
 protocol INewsListViewModel {
+    var newsFeed: [Article] { get }
+    var showNewsFeed: (() -> Void)? { get set }
+    var showError: ((Error) -> Void)? { get set }
     func fetchNews()
 }
 
 class NewsListViewModel: INewsListViewModel {
+    
+    var newsFeed = [Article]()
+    var showNewsFeed: (() -> Void)?
+    var showError: ((Error) -> Void)?
     
     fileprivate var newsListRepository: INewsListRepository
     
@@ -21,11 +28,14 @@ class NewsListViewModel: INewsListViewModel {
     }
     
     func fetchNews() {
-        newsListRepository.fetchNews { result in
+        newsListRepository.fetchNews { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let news):
-                debugPrint("News returned", news)
+                self.newsFeed = news.articles ?? []
+                self.showNewsFeed?()
             case .failure(let error):
+                self.showError?(error)
                 debugPrint("Error", error)
             }
         }
