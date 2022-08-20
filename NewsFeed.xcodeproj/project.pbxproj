@@ -214,9 +214,9 @@
 				14AC348D28B177E100DF69CA /* Repositories */,
 				14AC348828B1752700DF69CA /* Entities */,
 				14AEADA928B0FDC200B21A71 /* Base */,
+				14AC348528B1729200DF69CA /* Utils */,
 				14AEADA528B0FB0A00B21A71 /* Launch Screen */,
 				14AEADA628B0FB2100B21A71 /* Resources */,
-				14AC348528B1729200DF69CA /* Utils */,
 			);
 			path = NewsFeed;
 			sourceTree = "<group>";

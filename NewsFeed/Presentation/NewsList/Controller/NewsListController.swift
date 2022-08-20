@@ -14,9 +14,8 @@ class NewsListController: BaseViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .black
+        cv.backgroundColor = UIColor(red: 0.110, green: 0.106, blue: 0.125, alpha: 1)
         cv.translatesAutoresizingMaskIntoConstraints = false
-        
         cv.isPagingEnabled = true
         cv.dataSource = self
         cv.delegate = self
@@ -24,24 +23,48 @@ class NewsListController: BaseViewController {
         return cv
     }()
     
+    private lazy var navBarNewsLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14)
+        let boldTextAttributes: [NSAttributedString.Key: Any] = [
+            .font : UIFont.boldSystemFont(ofSize: 14)
+        ]
+        let boldAttributedString = NSMutableAttributedString(string: "NewsFeed", attributes: boldTextAttributes)
+        label.attributedText = boldAttributedString
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var topNewsLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.text = "Top News"
+        label.textColor = .white
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     var newsListViewModel: INewsListViewModel?
     weak var newsListCoordinator: NewsListCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = UIColor(red: 0.137, green: 0.137, blue: 0.165, alpha: 1)
         newsListViewModel?.fetchNews()
     }
     
     override func configureViews() {
         super.configureViews()
-        view.addSubviews(newsCollectionView)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navBarNewsLabel)
+        view.addSubviews(topNewsLabel, newsCollectionView)
         constrainViews()
     }
     
     fileprivate func constrainViews() {
-        newsCollectionView.fillUpSuperview(margin: .init(top: 0, left: 5, bottom: 0, right: 5))
+        topNewsLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: newsCollectionView.topAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, margin: .init(top: 10, left: 0, bottom: 10, right: 0))
+        newsCollectionView.anchor(top: topNewsLabel.safeAreaLayoutGuide.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, margin: .init(top: 10, left: 0, bottom: 0, right: 0))
     }
     
 }
