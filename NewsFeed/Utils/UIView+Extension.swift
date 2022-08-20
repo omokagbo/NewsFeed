@@ -10,9 +10,10 @@ import UIKit
 
 extension UIView {
     
-    public var identifier: String {
+    static var reuseIdentifier: String {
         return String(describing: self)
     }
+    
     
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor? = nil, leading: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, trailing: NSLayoutXAxisAnchor? = nil, margin: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
