@@ -4,14 +4,14 @@
 
 //  Created by Emmanuel Omokagbo on 20/08/2022
 //  Copyright © 2022 Emmanuel Omokagbo. All rights reserved.
-	
+
 
 import UIKit
 
 final class NewsListCollectionViewCell: UICollectionViewCell {
     
     fileprivate lazy var newsImageContainerView: UIView = {
-       let vw = UIView()
+        let vw = UIView()
         vw.translatesAutoresizingMaskIntoConstraints = false
         vw.layer.cornerRadius = 10
         vw.clipsToBounds = true
@@ -20,7 +20,7 @@ final class NewsListCollectionViewCell: UICollectionViewCell {
     }()
     
     fileprivate lazy var newsImage: CachedImageView = {
-       let imv = CachedImageView()
+        let imv = CachedImageView()
         imv.translatesAutoresizingMaskIntoConstraints = false
         imv.backgroundColor = .systemGray3
         imv.contentMode = .scaleAspectFill
@@ -30,7 +30,7 @@ final class NewsListCollectionViewCell: UICollectionViewCell {
     fileprivate lazy var newsHeadline: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.text = "init(coder:) has not been implemented init(coder:) has not been implemented init(coder:) has not been implemented"
+        label.text = ""
         label.textColor = .white
         label.numberOfLines = 0
         label.textAlignment = .left
@@ -73,7 +73,7 @@ final class NewsListCollectionViewCell: UICollectionViewCell {
     }
     
     func setup(with model: Article) {
-        newsHeadline.text = model.title
+        newsHeadline.text = model.title ?? ""
         newsAuthor.text = model.author ?? "Emmanuel Omokagbo"
         if let url = model.urlToImage {
             newsImage.fetchImage(with: url)

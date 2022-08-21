@@ -4,7 +4,7 @@
 
 //  Created by Emmanuel Omokagbo on 21/08/2022
 //  Copyright © 2022 Emmanuel Omokagbo. All rights reserved.
-	
+
 
 import UIKit
 
@@ -20,7 +20,7 @@ public final class CachedImageView: UIImageView {
                 return
             }
         }
-            
+        
         guard let url = URL(string: urlString) else {
             Logger.printIfDebug(data: "unable to get image url", logType: .error)
             return

@@ -26,15 +26,11 @@ class RemoteNetworkService: INetworkService {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = method.rawValue
-        
         request.cachePolicy = .returnCacheDataDontLoad
-        
-        reachability.whenUnreachable = { _ in
-            request.cachePolicy = .returnCacheDataDontLoad
-        }
         
         reachability.whenReachable = { _ in
             request.cachePolicy = .reloadIgnoringCacheData
+            Logger.printIfDebug(data: "Connected to the internet", logType: .success)
         }
         
         do {
@@ -86,5 +82,9 @@ class RemoteNetworkService: INetworkService {
         
         task.resume()
         
+    }
+    
+    deinit {
+        reachability.stopNotifier()
     }
 }

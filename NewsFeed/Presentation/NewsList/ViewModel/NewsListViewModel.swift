@@ -4,7 +4,7 @@
 
 //  Created by Emmanuel Omokagbo on 20/08/2022
 //  Copyright © 2022 Emmanuel Omokagbo. All rights reserved.
-	
+
 
 import Foundation
 
@@ -36,7 +36,6 @@ class NewsListViewModel: INewsListViewModel {
                 self.showNewsFeed?()
             case .failure(let error):
                 self.showError?(error)
-                debugPrint("Error", error)
             }
         }
     }
