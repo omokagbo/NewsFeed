@@ -46,6 +46,11 @@ class NewsListController: BaseViewController {
         return label
     }()
     
+    private lazy var refreshControl: UIRefreshControl = {
+        let cntrl = UIRefreshControl()
+        return cntrl
+    }()
+    
     var newsListViewModel: INewsListViewModel?
     weak var newsListCoordinator: NewsListCoordinator?
     
@@ -60,12 +65,19 @@ class NewsListController: BaseViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navBarNewsLabel)
         view.addSubviews(topNewsLabel, newsCollectionView)
         constrainViews()
+        newsCollectionView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
         showLoading()
     }
     
     fileprivate func constrainViews() {
         topNewsLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: newsCollectionView.topAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, margin: .init(top: 10, left: 0, bottom: 10, right: 0))
         newsCollectionView.anchor(top: topNewsLabel.safeAreaLayoutGuide.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, margin: .init(top: 10, left: 0, bottom: 0, right: 0))
+    }
+    
+    @objc fileprivate func pullToRefresh() {
+        newsListViewModel?.fetchNews()
+        showLoading()
     }
     
     override func setChildViewControllerObservers() {
