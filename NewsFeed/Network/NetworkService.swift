@@ -57,6 +57,7 @@ class RemoteNetworkService: INetworkService {
                 do {
                     let response = try JSONDecoder().decode(T.self, from: data)
                     completionHandler(.success(response))
+                    Logger.printIfDebug(data: "\(response)", logType: .success)
                 } catch let error {
                     completionHandler(.failure(error))
                 }

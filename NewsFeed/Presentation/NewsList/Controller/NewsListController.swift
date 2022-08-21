@@ -77,7 +77,10 @@ class NewsListController: BaseViewController {
     
     @objc fileprivate func pullToRefresh() {
         newsListViewModel?.fetchNews()
-        showLoading()
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.refreshControl.endRefreshing()
+        }
     }
     
     override func setChildViewControllerObservers() {
