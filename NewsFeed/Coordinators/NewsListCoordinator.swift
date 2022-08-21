@@ -26,7 +26,7 @@ final class NewsListCoordinator: BaseCoordinator {
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    func showNewsDetailsFor(_ news: News) {
+    func showNewsDetailsFor(_ news: Article) {
         let vc = AppDIContainer.makeNewsDetailsController()
         vc.news = news
         navigationController?.pushViewController(vc, animated: true)

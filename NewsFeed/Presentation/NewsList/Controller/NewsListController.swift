@@ -115,6 +115,8 @@ extension NewsListController: UICollectionViewDataSource {
 extension NewsListController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        guard let news = newsListViewModel?.newsFeed else { return }
+        newsListCoordinator?.showNewsDetailsFor(news[indexPath.row])
     }
 }
 
