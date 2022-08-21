@@ -181,7 +181,6 @@
 			children = (
 				14AC349A28B181A200DF69CA /* AppFlowCoordinator.swift */,
 				14AC349E28B186C700DF69CA /* Coordinator.swift */,
-				14AC34A228B1889200DF69CA /* NewsListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -288,6 +287,7 @@
 		14AEADA828B0FC3300B21A71 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
+				14C9DEF828B28CAB002E70AB /* Flow */,
 				14AC34A428B1906300DF69CA /* Views */,
 				14AC349328B1802800DF69CA /* ViewModel */,
 				14AC349228B1801A00DF69CA /* Controller */,
@@ -322,6 +322,14 @@
 				9ACA585A28B1D2300003F8B2 /* Reachability.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		14C9DEF828B28CAB002E70AB /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				14AC34A228B1889200DF69CA /* NewsListCoordinator.swift */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

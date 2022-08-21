@@ -19,9 +19,7 @@ class RemoteNetworkService: INetworkService {
             Logger.printIfDebug(data: "unable to get url", logType: .error)
             return
         }
-        
-        Logger.printIfDebug(data: "\(url)", logType: .success)
-        
+                
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -30,7 +28,6 @@ class RemoteNetworkService: INetworkService {
         
         reachability.whenReachable = { _ in
             request.cachePolicy = .reloadIgnoringCacheData
-            Logger.printIfDebug(data: "Connected to the internet", logType: .success)
         }
         
         do {
@@ -40,7 +37,6 @@ class RemoteNetworkService: INetworkService {
         }
         
         if let parameters = parameters {
-            Logger.printIfDebug(data: "Parameter: \(parameters)", logType: .success)
             switch method {
             case .get:
                 var urlComponent = URLComponents(string: urlString)
@@ -71,7 +67,6 @@ class RemoteNetworkService: INetworkService {
                 do {
                     let response = try JSONDecoder().decode(T.self, from: data)
                     completionHandler(.success(response))
-                    Logger.printIfDebug(data: "\(response)", logType: .success)
                 } catch let error {
                     completionHandler(.failure(error))
                 }
