@@ -60,7 +60,6 @@ final class NewsListCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-//        newsImage.image = nil
     }
     
     fileprivate func configureViews() {

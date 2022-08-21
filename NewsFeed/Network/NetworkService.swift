@@ -19,11 +19,29 @@ class RemoteNetworkService: INetworkService {
             Logger.printIfDebug(data: "unable to get url", logType: .error)
             return
         }
+        
         Logger.printIfDebug(data: "\(url)", logType: .success)
+        
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = method.rawValue
+        
+        request.cachePolicy = .returnCacheDataDontLoad
+        
+        reachability.whenUnreachable = { _ in
+            request.cachePolicy = .returnCacheDataDontLoad
+        }
+        
+        reachability.whenReachable = { _ in
+            request.cachePolicy = .reloadIgnoringCacheData
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            Logger.printIfDebug(data: error.localizedDescription, logType: .error)
+        }
         
         if let parameters = parameters {
             Logger.printIfDebug(data: "Parameter: \(parameters)", logType: .success)

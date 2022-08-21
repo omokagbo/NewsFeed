@@ -11,6 +11,7 @@ import Foundation
 enum LogType {
     case success
     case error
+    case info
 }
 
 class Logger {
@@ -22,6 +23,8 @@ class Logger {
             print("🟢🟢🟢", data)
         case .error:
             print("🛑🛑🛑", data)
+        case .info:
+            print("🟡🟡🟡", data)
         }
         #endif
     }

@@ -16,6 +16,8 @@ extension UIViewController {
             title = "🟢🟢🟢   " + title + "   🟢🟢🟢"
         case .error:
             title = "🛑🛑🛑   " + title + "   🛑🛑🛑"
+        case .info:
+            title = "🟡🟡🟡   " + title + "   🟡🟡🟡"
         }
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))

@@ -37,6 +37,7 @@
 		14AEADAC28B1011600B21A71 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEADAB28B1011600B21A71 /* AppDIContainer.swift */; };
 		14AEADAE28B101DF00B21A71 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEADAD28B101DF00B21A71 /* AppConfiguration.swift */; };
 		14AEADB128B1084000B21A71 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEADB028B1084000B21A71 /* HTTPMethod.swift */; };
+		9ACA585B28B1D2300003F8B2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA585A28B1D2300003F8B2 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		14AEADAB28B1011600B21A71 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		14AEADAD28B101DF00B21A71 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		14AEADB028B1084000B21A71 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9ACA585A28B1D2300003F8B2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +127,8 @@
 				14AC34A728B1A77500DF69CA /* CachedImageView.swift */,
 				14AC348328B1728E00DF69CA /* String+Extension.swift */,
 				14AC348628B1736700DF69CA /* UIView+Extension.swift */,
-				14AC348B28B1773F00DF69CA /* Code+Extension.swift */,
 				14AC34A928B1B51E00DF69CA /* UIViewController+Extension.swift */,
+				14AC348B28B1773F00DF69CA /* Code+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 				14AC347D28B16E3700DF69CA /* NetworkError.swift */,
 				14AC347F28B16FF600DF69CA /* Route.swift */,
 				14AC348128B1721A00DF69CA /* NetworkService.swift */,
+				9ACA585A28B1D2300003F8B2 /* Reachability.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				14AC34A628B1907900DF69CA /* NewsListCollectionViewCell.swift in Sources */,
 				14AC348F28B177EE00DF69CA /* NewsListRepository.swift in Sources */,
 				14AC347E28B16E3700DF69CA /* NetworkError.swift in Sources */,
+				9ACA585B28B1D2300003F8B2 /* Reachability.swift in Sources */,
 				14AC34A128B1880200DF69CA /* BaseCoordinator.swift in Sources */,
 				14AC34A328B1889200DF69CA /* NewsListCoordinator.swift in Sources */,
 				14AC349D28B1852900DF69CA /* BaseViewController.swift in Sources */,

@@ -9,3 +9,5 @@
 import Foundation
 
 typealias BodyParam = [String: Any]
+
+let reachability = try! Reachability()
