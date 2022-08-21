@@ -42,10 +42,10 @@ class BaseViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.progressIndicator.startAnimating()
-        }
-        views.forEach {
-            $0.isUserInteractionEnabled = false
-            $0.alpha = 0.85
+            self.views.forEach {
+                $0.isUserInteractionEnabled = false
+                $0.alpha = 0.85
+            }
         }
     }
     
@@ -53,10 +53,10 @@ class BaseViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.progressIndicator.stopAnimating()
-        }
-        views.forEach {
-            $0.isUserInteractionEnabled = true
-            $0.alpha = 1
+            self.views.forEach {
+                $0.isUserInteractionEnabled = true
+                $0.alpha = 1
+            }
         }
     }
     

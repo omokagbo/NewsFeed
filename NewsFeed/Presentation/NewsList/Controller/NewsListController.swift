@@ -48,11 +48,14 @@ class NewsListController: BaseViewController {
     
     private lazy var refreshControl: UIRefreshControl = {
         let cntrl = UIRefreshControl()
+        cntrl.tintColor = .systemBlue
         return cntrl
     }()
     
     var newsListViewModel: INewsListViewModel?
     weak var newsListCoordinator: NewsListCoordinator?
+    
+    override var views: [UIView] { [newsCollectionView] }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,9 +79,9 @@ class NewsListController: BaseViewController {
     }
     
     @objc fileprivate func pullToRefresh() {
-        newsListViewModel?.fetchNews()
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
+            self.newsListViewModel?.fetchNews()
             self.refreshControl.endRefreshing()
         }
     }
