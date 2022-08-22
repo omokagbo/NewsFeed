@@ -30,6 +30,10 @@ class RemoteNetworkService: INetworkService {
             request.cachePolicy = .reloadIgnoringCacheData
         }
         
+        reachability.whenUnreachable = { _ in
+            request.cachePolicy = .returnCacheDataDontLoad
+        }
+        
         do {
             try reachability.startNotifier()
         } catch {

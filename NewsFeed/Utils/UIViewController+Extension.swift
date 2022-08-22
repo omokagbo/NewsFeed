@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-    func showAlert(title: String, message: String, type: LogType) {
+    func showAlert(title: String, message: String, type: LogType, action: NoParamHandler?) {
         var title = title
         switch type {
         case .success:
@@ -20,7 +20,7 @@ extension UIViewController {
             title = "🟡🟡🟡   " + title + "   🟡🟡🟡"
         }
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in action?() }))
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.present(alert, animated: true)

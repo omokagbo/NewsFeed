@@ -9,5 +9,6 @@
 import Foundation
 
 typealias BodyParam = [String: Any]
+typealias NoParamHandler = (() -> Void)
 
 let reachability = try! Reachability()

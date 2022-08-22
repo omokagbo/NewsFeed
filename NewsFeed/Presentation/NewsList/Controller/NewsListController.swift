@@ -96,7 +96,7 @@ class NewsListController: BaseViewController {
         newsListViewModel?.showError = { [weak self] error in
             guard let self = self else { return }
             self.hideLoading()
-            self.showAlert(title: "Error", message: error.localizedDescription, type: .error)
+            self.showAlert(title: "Error", message: error.localizedDescription, type: .error, action: self.pullToRefresh)
             Logger.printIfDebug(data: error.localizedDescription, logType: .error)
         }
     }
