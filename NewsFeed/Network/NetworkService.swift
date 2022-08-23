@@ -13,7 +13,7 @@ protocol INetworkService {
 }
 
 class RemoteNetworkService: INetworkService {
-    func fetch<T>(route: Route, method: HTTPMethod, type: T.Type, parameters: BodyParam?, completionHandler: @escaping (Result<T, Error>) -> Void) where T : Decodable, T : Encodable {
+    func fetch<T: Codable>(route: Route, method: HTTPMethod, type: T.Type, parameters: BodyParam?, completionHandler: @escaping (Result<T, Error>) -> Void) {
         let urlString = "\(AppConfiguration.baseURL)\(route.description)"
         guard let url = urlString.asURL else {
             Logger.printIfDebug(data: "unable to get url", logType: .error)

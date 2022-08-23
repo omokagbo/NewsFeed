@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Jamie Ross, Tess Homan",
+            "title": "The 7 things you need to know for Monday, August 22 - The Washington Post",
+            "description": "Catch up in minutes with these 7 stories.",
+            "url": "https://www.washingtonpost.com/the-seven/2022/08/22/what-to-know-for-august-22/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LAILKXQKB5GJNC4G5LGNP5LHRE.png&w=1440",
+            "publishedAt": "2022-08-22T12:34:11Z",
+            "content": "A car explosion killed the daughter of a Vladimir Putin ally.\r\n<ul><li>What happened? Daria Dugina, 29, was driving her fathers car near Moscow on Saturday night when it burst into flames.</li><li>Wh… [+3202 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": null,
+            "title": "Floodwaters overtake trucks and cars in downtown Dallas as flash flooding threat persists - CNN",
+            "description": "Flooding overwhelmed cars and trucks early Monday on interstates in downtown Dallas as flash flooding continues to threaten into the morning rush hour.",
+            "url": "https://www.cnn.com/2022/08/22/us/dallas-weather-flash-flood-warning/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220822062159-01-dallas-flooding-0822-super-tease.jpg",
+            "publishedAt": "2022-08-22T11:50:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Peter Schacknow",
+            "title": "Stocks making the biggest moves in the premarket: Signify Health, Bed Bath & Beyond, AMC and more - CNBC",
+            "description": "The stocks making the biggest moves in premarket trading include Signify Health, Bed Bath & Beyond, AMC, and more.",
+            "url": null,
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/106839278-1613058216555SignifyHealth-OB-Photo-210211-PRESS-20-jpg?v=1613058263&w=1920&h=1080",
+            "publishedAt": "2022-08-22T11:46:24Z",
+            "content": "Take a look at some of the biggest movers in the premarket:\r\nSignify Health (SGFY) Signify Health surged 37.5% in premarket trading as a potential bidding war escalates for the home health services p… [+2564 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Guardian"
+            },
+            "author": "Lauren Gambino",
+            "title": "‘The world flipped upside down’: will end of Roe galvanize Democrats’ base in midterms? - The Guardian US",
+            "description": "Democrats believe a brewing backlash after June ruling will reshape the battle for control of Congress and statehouses this fall",
+            "url": "https://amp.theguardian.com/us-news/2022/aug/22/democrats-abortion-rights-midterms-november",
+            "urlToImage": "https://i.guim.co.uk/img/media/3f122a6bbbb43bbf623d5e77fa2c20d376e09224/0_154_5706_3425/master/5706.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=808d924bac298a8021f51c6143743ca7",
+            "publishedAt": "2022-08-22T11:42:00Z",
+            "content": "For years, Democrats warned that abortion rights were under grave threat. Across the US, antiabortion activists in red states chipped away at access and pushed for conservative judges to secure their… [+8334 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "The Guardian"
+            },
+            "author": "Ben Doherty",
+            "title": "Crikey: small independent news website challenges Lachlan Murdoch to sue it for defamation - The Guardian",
+            "description": "Crikey.com.au issues challenge in newspaper ads, including in the New York Times, after Murdoch issues legal threat over article",
+            "url": "https://amp.theguardian.com/media/2022/aug/22/crikey-small-independent-news-website-challenges-lachlan-murdoch-to-sue-it-for-defamation",
+            "urlToImage": null,
+            "publishedAt": "2022-08-22T11:17:00Z",
+            "content": "Lachlan MurdochCrikey.com.au issues challenge in newspaper ads, including in the New York Times, after Murdoch issues legal threat over article\r\nA small independent news website in Australia is takin… [+8586 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "WCVB Boston"
+            },
+            "author": null,
+            "title": "Monday morning commute brings first big test of MBTA's Orange Line shutdown - WCVB Boston",
+            "description": "The 11 miles of the Orange Line, from the Oak Grove to Forest Hills stations, closed Friday night and is scheduled to remain closed until 5 a.m. on Sept. 19.",
+            "url": "https://www.wcvb.com/article/30-day-shutdown-of-mbtas-orange-line-monday-morning-commute-august-22/40952840",
+            "urlToImage": "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/shuttle-bus-loading-everett-1661164279.png?crop=1.00xw:1.00xh;0,0&resize=1200:*",
+            "publishedAt": "2022-08-22T11:08:00Z",
+            "content": "BOSTON —The first true test of the MBTA's Orange Line shutdown began Monday as morning commuters navigated new transportation options for the 30-day closure.\r\nThe 11 miles of the Orange Line, from th… [+3869 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "MarketWatch"
+            },
+            "author": "Barbara Kollmeyer",
+            "title": "Once offering the worst return on Wall Street, cash is now looking like the best asset to own, says Morgan Stanley - MarketWatch",
+            "description": "Critical information for the U.S. trading day",
+            "url": "https://www.marketwatch.com/story/once-offering-the-worst-return-on-wall-street-cash-is-now-looking-like-the-best-asset-to-own-says-morgan-stanley-11661165743",
+            "urlToImage": "https://images.mktw.net/im-608127/social",
+            "publishedAt": "2022-08-22T10:55:00Z",
+            "content": "Stock sellers are ready to pick up where they left off on Friday, as the market appears to be is waking up from its August slumber with a vengeance.As Goldman Sachs chief U.S. equity strategist David… [+6243 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "TribLIVE"
+            },
+            "author": "Tim Benz",
+            "title": "First Call: Ex-Steeler shines at QB in Cleveland; Roquan Smith willing to stay in Chicago; Ravens extend preseason streak - TribLIVE",
+            "description": "An ex-Steelers quarterback is on fire with his new team this preseason. The Roquan Smith dream seems to have died for Pittsburgh fans. The Ravens just can&rsquo;t lose in August. And Pittsburgh has two champions in a pair of very unique sports. All that in Mo…",
+            "url": "https://triblive.com/sports/first-call-ex-steeler-shines-at-qb-in-cleveland-roquan-smith-willing-to-stay-in-chicago-ravens-extend-preseason-streak/",
+            "urlToImage": "https://assets-varnish.triblive.com/2022/08/5357652_web1_AP22225738905141.jpg",
+            "publishedAt": "2022-08-22T10:18:04Z",
+            "content": "An ex-Steelers quarterback is on fire with his new team this preseason. The Roquan Smith dream seems to have died for Pittsburgh fans. The Ravens just can’t lose in August. And Pittsburgh has two cha… [+6103 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Iraq shrine collapse: Seven bodies pulled from rubble after landslide - BBC",
+            "description": "Seven bodies are found after a Shia Muslim shrine, the Qattarat al-Imam Ali, was hit by a landslide.",
+            "url": "https://www.bbc.com/news/world-middle-east-62625308",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13C7C/production/_126402018_mediaitem126402017.jpg",
+            "publishedAt": "2022-08-22T09:57:34Z",
+            "content": "Rescuers looking for survivors after a Shia Muslim shrine in Iraq collapsed partially have found three more bodies, bringing the number of dead to seven.\r\nFour women and a child were among those kill… [+1783 chars]"
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Ryan Leston",
+            "title": "House of the Dragon: HBO Max Crashes as Millions of Game of Thrones Fans Tune in for Series Premiere - IGN - IGN",
+            "description": "Game of Thrones fans were left disappointed on Sunday night as many were unable to watch the House of the Dragon series premiere on HBO Max.",
+            "url": "https://www.ign.com/articles/house-of-the-dragon-hbo-max-crashes-game-of-thrones-premiere",
+            "urlToImage": "https://assets-prd.ignimgs.com/2022/08/15/house-of-the-dragon-1660578456124.jpg?width=1280",
+            "publishedAt": "2022-08-22T09:15:36Z",
+            "content": "Game of Thrones prequel House of the Dragon has crashed HBO Max. Millions of subscribers flocked to the app on Sunday for the series premiere, but many were unable to view it due to technical issues … [+2427 chars]"
+        },
+        {
+            "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": null,
+            "title": "'We got rolled': How the conservative grassroots lost the fight with Biden because it was focused on Trump - POLITICO",
+            "description": "The former president’s presence on the political landscape is making it harder to launch a modern day Tea Party movement.",
+            "url": "https://www.politico.com/news/2022/08/22/conservative-grassroots-biden-trump-00052983",
+            "urlToImage": "https://static.politico.com/02/81/de1759e7467499a19b7baf1adb36/ap22221553191856.jpg",
+            "publishedAt": "2022-08-22T08:30:00Z",
+            "content": "Everything was moving so fast, the tax provisions were being debated on the fly, so there was very little time for groups to do that in-depth grassroots pushback like we saw during Obamacare, said Ce… [+6264 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Sophia Saifi and Rhea Mogul, CNN",
+            "title": "Pakistan's former PM Imran Khan investigated by police under anti-terror law - CNN",
+            "description": "Pakistani authorities are investigating whether former prime minister Imran Khan violated anti-terror laws and have banned him from speaking live on television, in moves likely to inflame tensions between Khan, who maintains mass popular support, and the coal…",
+            "url": "https://www.cnn.com/2022/08/22/asia/pakistan-imran-khan-anti-terror-law-investigation-intl-hnk/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220821195503-pakistan-imran-khan-police-investigation-anti-terror-law-intl-hnk-super-tease.jpg",
+            "publishedAt": "2022-08-22T06:50:00Z",
+            "content": "Islamabad (CNN)Pakistani authorities are investigating whether former prime minister Imran Khan violated anti-terror laws and have banned him from speaking live on television, in moves likely to infl… [+3697 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Post"
+            },
+            "author": "Fox Business",
+            "title": "McDonald's finally brings hit twist on classic Big Mac to the US - New York Post ",
+            "description": "“We’re always looking to give our fans more ways to enjoy the classic menu items they know and love,” McDonald’s said.",
+            "url": "https://nypost.com/2022/08/22/mcdonalds-finally-brings-hit-twist-on-classic-big-mac-to-the-us/",
+            "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2022/08/newspress-collage-23553851-1661149361965.jpg?quality=75&strip=all&1661135279&w=1024",
+            "publishedAt": "2022-08-22T06:40:00Z",
+            "content": "“We’re always looking to give our fans more ways to enjoy the classic menu items they know and love,” McDonald’s said of the addition of the new Big Mac, according to Fox 6. \r\nThe sandwich will inclu… [+976 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "‘I’m not going to pay for that’: Gietzen scoffs at Sedgwick County recount - Wichita Eagle",
+            "description": null,
+            "url": "https://news.google.com/__i/rss/rd/articles/CBMiRWh0dHBzOi8vd3d3LmthbnNhcy5jb20vbmV3cy9wb2xpdGljcy1nb3Zlcm5tZW50L2FydGljbGUyNjQ3NDUzMjkuaHRtbNIBAA?oc=5",
+            "urlToImage": null,
+            "publishedAt": "2022-08-22T06:06:43Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Chris Boyette, CNN",
+            "title": "Teachers at Ohio's largest school district vote to strike just before start of school year - CNN",
+            "description": "Teachers at Ohio's largest school district voted to go on strike Sunday, just days before school is scheduled to start, according to the teachers' union.",
+            "url": "https://www.cnn.com/2022/08/22/us/ohio-school-district-strike/index.html",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/220822011544-02-ohio-school-district-strike-super-tease.jpg",
+            "publishedAt": "2022-08-22T05:54:00Z",
+            "content": "(CNN)Teachers at Ohio's largest school district voted to go on strike Sunday, just days before school is scheduled to start, according to the teachers' union.\r\nThe Columbus Education Association unio… [+1914 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "NDTV News"
+            },
+            "author": null,
+            "title": "On Priyanka Chopra's Precious Pics With Daughter Malti Marie, Comments From Kareena Kapoor, Anushka Sharma And Others - NDTV Movies",
+            "description": "\"Love like no other,\" wrote Priyanka Chopra",
+            "url": "https://www.ndtv.com/entertainment/on-priyanka-chopras-precious-pics-with-daughter-malti-marie-comments-from-kareena-kapoor-anushka-sharma-and-others-3274479",
+            "urlToImage": "https://c.ndtvimg.com/2022-08/u355uso_priyanka_625x300_22_August_22.jpg",
+            "publishedAt": "2022-08-22T04:21:57Z",
+            "content": "Priyanka Chopra shared this picture. (courtesy: priyankachopra)\r\nPriyanka Chopra blessed our morning Insta feed with new pictures of her with daughter Malti Marie Chopra Jonas. The first image is a s… [+1584 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Tom's Guide"
+            },
+            "author": "Philip Michaels",
+            "title": "iPhone 14 Pro Max vs. iPhone 13 Pro Max: Biggest rumored upgrades - Tom's Guide",
+            "description": "How can Apple improve on its biggest, best phone?",
+            "url": "https://www.tomsguide.com/face-off/iphone-14-pro-max-vs-iphone-13-pro-max",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/hpdqvdMAAHqWnSkvpTBSAg-1200-80.jpg",
+            "publishedAt": "2022-08-22T04:01:02Z",
+            "content": "The Apple September event is nearly upon us, making an iPhone 14 Pro Max vs. iPhone 13 Pro Max comparison more relevant than ever. At that event, Apple will likely introduce its latest iPhones, and t… [+9457 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Kim Tong-hyung",
+            "title": "US, S. Korea open biggest drills in years amid North threats - The Associated Press",
+            "description": "SEOUL, South Korea (AP) — The United States and South Korea began their biggest combined military training in years Monday as they heighten their defense posture against the growing North Korean nuclear threat.",
+            "url": "https://apnews.com/article/covid-health-seoul-south-korea-nuclear-weapons-bbabb0c0d727c15b0cf7f8f6d62c7934",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/be870c12090349acb5d70be5f0de362e/3000.jpeg",
+            "publishedAt": "2022-08-22T03:34:45Z",
+            "content": "SEOUL, South Korea (AP) The United States and South Korea began their biggest combined military training in years Monday as they heighten their defense posture against the growing North Korean nuclea… [+5483 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "2022 NFL preseason rookie QB rankings: Kenny Pickett, Skylar Thompson headline top five Week 2 performances - CBS Sports",
+            "description": "Assessing the first-year QBs in the preseason",
+            "url": "https://www.cbssports.com/nfl/news/2022-nfl-preseason-rookie-qb-rankings-kenny-pickett-skylar-thompson-headline-top-five-week-2-performances/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2022/08/22/b6a0c0fe-c311-4546-8526-e72856c450e8/thumbnail/1200x675/c83a7e38e3b86cb759bced145b6527a5/pickett5.jpg",
+            "publishedAt": "2022-08-22T02:58:57Z",
+            "content": "Two weeks of preseason football are all but in the books, which means this year's rookie quarterbacks are one step closer to making their official debuts. But how did the first-year signal-callers fa… [+3138 chars]"
+        },
+        {
+            "source": {
+                "id": "al-jazeera-english",
+                "name": "Al Jazeera English"
+            },
+            "author": "Al Jazeera",
+            "title": "Calls for restraint as attacks continue near Ukraine power plant - Al Jazeera English",
+            "description": "Leaders of US, UK, Germany and France say inspectors need to visit the Zaporizhzhia power plant as soon as possible.",
+            "url": "https://www.aljazeera.com/news/2022/8/21/western-leaders-urge-restraint-around-ukraine-nuclear-plant",
+            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2022/08/000_32G84YH.jpg?resize=1920%2C1440",
+            "publishedAt": "2022-08-22T02:21:48Z",
+            "content": "Leaders of the United States, United Kingdom, France and Germany have called for restraint around the Russian-occupied Zaporizhzhia nuclear plant in Ukraine, as artillery shells continued to rain dow… [+3846 chars]"
+        }
+    ]
+}
