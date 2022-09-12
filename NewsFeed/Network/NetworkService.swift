@@ -20,25 +20,31 @@ class RemoteNetworkService: INetworkService {
             return
         }
                 
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url, timeoutInterval: .greatestFiniteMagnitude)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = method.rawValue
-        request.cachePolicy = .returnCacheDataDontLoad
         
-        reachability.whenReachable = { _ in
-            request.cachePolicy = .reloadIgnoringCacheData
-        }
+        // the cache implementation here is still not complete
         
-        reachability.whenUnreachable = { _ in
-            request.cachePolicy = .returnCacheDataDontLoad
-        }
+        // load from cache
+//        request.cachePolicy = .returnCacheDataDontLoad
         
-        do {
-            try reachability.startNotifier()
-        } catch {
-            Logger.printIfDebug(data: error.localizedDescription, logType: .error)
-        }
+        // when unreachable, load from cache
+//        reachability.whenUnreachable = { _ in
+//            request.cachePolicy = .returnCacheDataDontLoad
+//        }
+        
+        // load from source
+//        reachability.whenReachable = { _ in
+//            request.cachePolicy = .reloadIgnoringLocalCacheData
+//        }
+        
+//        do {
+//            try reachability.startNotifier()
+//        } catch {
+//            Logger.printIfDebug(data: error.localizedDescription, logType: .error)
+//        }
         
         if let parameters = parameters {
             switch method {

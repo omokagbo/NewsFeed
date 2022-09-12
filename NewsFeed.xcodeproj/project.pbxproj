@@ -41,6 +41,8 @@
 		14C9DEFA28B28F18002E70AB /* NewsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C9DEF928B28F18002E70AB /* NewsListViewModelTests.swift */; };
 		14C9DEFE28B28FA5002E70AB /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC348928B1753800DF69CA /* News.swift */; };
 		14D96D3528B3E2C5004F6332 /* News+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D96D3428B3E2C5004F6332 /* News+Stub.swift */; };
+		9AAEEFF828CEFA660079ED33 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAEEFF728CEFA660079ED33 /* Preference.swift */; };
+		9AAEEFFA28CEFA8C0079ED33 /* PreferenceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAEEFF928CEFA8C0079ED33 /* PreferenceConstants.swift */; };
 		9ACA585B28B1D2300003F8B2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA585A28B1D2300003F8B2 /* Reachability.swift */; };
 		9ACA585D28B1DB030003F8B2 /* NewsListController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA585C28B1DB030003F8B2 /* NewsListController+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -100,6 +102,8 @@
 		14AEB57228B4CBBE00443B69 /* MockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		14C9DEF928B28F18002E70AB /* NewsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModelTests.swift; sourceTree = "<group>"; };
 		14D96D3428B3E2C5004F6332 /* News+Stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "News+Stub.swift"; sourceTree = "<group>"; };
+		9AAEEFF728CEFA660079ED33 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		9AAEEFF928CEFA8C0079ED33 /* PreferenceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceConstants.swift; sourceTree = "<group>"; };
 		9ACA585A28B1D2300003F8B2 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		9ACA585C28B1DB030003F8B2 /* NewsListController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsListController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +233,7 @@
 				14AEADA728B0FC2B00B21A71 /* Presentation */,
 				14AEADAF28B1082500B21A71 /* Network */,
 				14AC348D28B177E100DF69CA /* Repositories */,
+				9AAEEFF628CEFA4A0079ED33 /* Preference */,
 				14AC348828B1752700DF69CA /* Entities */,
 				14AEADA928B0FDC200B21A71 /* Base */,
 				14AC348528B1729200DF69CA /* Utils */,
@@ -356,6 +361,15 @@
 				14D96D3428B3E2C5004F6332 /* News+Stub.swift */,
 			);
 			path = Stub;
+			sourceTree = "<group>";
+		};
+		9AAEEFF628CEFA4A0079ED33 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				9AAEEFF728CEFA660079ED33 /* Preference.swift */,
+				9AAEEFF928CEFA8C0079ED33 /* PreferenceConstants.swift */,
+			);
+			path = Preference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,11 +506,13 @@
 				14AC348728B1736700DF69CA /* UIView+Extension.swift in Sources */,
 				14AEADB128B1084000B21A71 /* HTTPMethod.swift in Sources */,
 				14AC34A628B1907900DF69CA /* NewsListCollectionViewCell.swift in Sources */,
+				9AAEEFFA28CEFA8C0079ED33 /* PreferenceConstants.swift in Sources */,
 				14AC348F28B177EE00DF69CA /* NewsListRepository.swift in Sources */,
 				14AC347E28B16E3700DF69CA /* NetworkError.swift in Sources */,
 				9ACA585B28B1D2300003F8B2 /* Reachability.swift in Sources */,
 				14AC34A128B1880200DF69CA /* BaseCoordinator.swift in Sources */,
 				14AC34A328B1889200DF69CA /* NewsListCoordinator.swift in Sources */,
+				9AAEEFF828CEFA660079ED33 /* Preference.swift in Sources */,
 				14AC349D28B1852900DF69CA /* BaseViewController.swift in Sources */,
 				14AC348C28B1773F00DF69CA /* Code+Extension.swift in Sources */,
 				9ACA585D28B1DB030003F8B2 /* NewsListController+Extension.swift in Sources */,

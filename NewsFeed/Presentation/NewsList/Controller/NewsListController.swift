@@ -60,7 +60,7 @@ class NewsListController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0.137, green: 0.137, blue: 0.165, alpha: 1)
-        newsListViewModel?.fetchNews()
+        newsListViewModel?.monitorNetwork()
     }
     
     override func configureViews() {

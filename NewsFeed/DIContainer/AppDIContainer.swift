@@ -18,8 +18,12 @@ class AppDIContainer {
         return NewsListRepository(remoteDataSource: makeNetworkService())
     }
     
+    static func makeLocalPreference() -> IPreference {
+        return LocalPreference()
+    }
+    
     static func makeNewsListViewModel() -> INewsListViewModel {
-        return NewsListViewModel(newsListRepo: makeNewsListRepository())
+        return NewsListViewModel(newsListRepo: makeNewsListRepository(), preference: makeLocalPreference())
     }
     
     static func makeNewsListController() -> NewsListController {
