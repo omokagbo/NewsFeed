@@ -81,7 +81,7 @@ class NewsListController: BaseViewController {
     @objc fileprivate func pullToRefresh() {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.newsListViewModel?.fetchNews()
+            self.newsListViewModel?.monitorNetwork()
             self.refreshControl.endRefreshing()
         }
     }
